@@ -16,3 +16,11 @@ MetaInfo.defaultProps = {
   style: { background: '#8f8' },
   dateFormat: "DD-MM-YYYY"
 }
+
+MetaInfo.propTypes = {
+  style: PropTypes.object,
+  dateFormat: PropTypes.string,
+  author: PropTypes.string.isRequired,
+  updatedAt: PropTypes.string.isRequired,
+  createdAt: PropTypes.string.isRequired
+};

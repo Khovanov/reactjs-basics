@@ -16,3 +16,7 @@ class BlogList extends React.Component {
     )
   }
 }
+
+BlogList.propTypes = {
+  list: PropTypes.arrayOf(PropTypes.object).isRequired
+};

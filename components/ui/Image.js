@@ -3,8 +3,14 @@ class Image extends React.Component {
 }
 
 Image.defaultProps = {
-  src: 'http://lorempixel.com/100/100/', 
   width: '100px', 
   height: '100px', 
   alt: 'Image' 
 }
+
+Image.propTypes = {
+  src: PropTypes.string.isRequired, 
+  width: PropTypes.string, 
+  height: PropTypes.string, 
+  alt: PropTypes.string 
+};

@@ -11,3 +11,9 @@ class BlogItem extends React.Component {
     )
   } 
 }
+
+BlogItem.propTypes = {
+  text: PropTypes.string.isRequired,
+  metaInfo: PropTypes.object.isRequired,
+  image: PropTypes.object.isRequired
+};
