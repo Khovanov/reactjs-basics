@@ -1,5 +1,5 @@
-const DOM = React.DOM
-const { assign } = _;
+const { DOM, PropTypes } = React;
+const { assign, bind } = _;
 
 const list = [
   {
@@ -10,7 +10,8 @@ const list = [
     metaInfo: {
       author: 'Greg',
       updatedAt: "2016-12-28",
-      createdAt: "2016-12-20"        
+      createdAt: "2016-12-20",
+      totalLikes: 10        
     }    
   },
   {
@@ -21,7 +22,8 @@ const list = [
     metaInfo: {
       author: 'Ann',
       updatedAt: "2016-12-18",
-      createdAt: "2016-12-18"        
+      createdAt: "2016-12-18",
+      totalLikes: 20       
     }    
   },
   {
@@ -32,7 +34,8 @@ const list = [
     metaInfo: {
       author: 'Mike',
       updatedAt: "2016-12-05",
-      createdAt: "2016-12-01"        
+      createdAt: "2016-12-01",
+      totalLikes: 30                   
     } 
   } 
 ]

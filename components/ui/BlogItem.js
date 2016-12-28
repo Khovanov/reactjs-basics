@@ -5,7 +5,8 @@ class BlogItem extends React.Component {
         null,
         React.createElement(TextBox, { text: text }),
         React.createElement(Image, assign({}, image)),
-        React.createElement(MetaInfo, metaInfo)
+        React.createElement(MetaInfo, metaInfo),
+        React.createElement(Like, {totalLikes: metaInfo.totalLikes})        
       )
     )
   } 
