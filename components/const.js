@@ -1,6 +1,8 @@
 const { DOM, PropTypes } = React;
 const { assign, bind } = _;
 
+const dateFormat = "DD-MM-YYYY"
+
 const list = [
   {
     text: 'Lorem ipsum dolor sit amet',
@@ -39,3 +41,7 @@ const list = [
     } 
   } 
 ]
+
+function displayDate(date) {
+  return moment(date).format(dateFormat)
+}
